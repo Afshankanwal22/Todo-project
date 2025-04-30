@@ -8,15 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>📝 My To-Do List</h1>
-        <div class="todo-input">
-          <input type="text" id="task-input" placeholder="Enter your task" />
-          <button onclick="addTask()">Add</button>
-        </div>
-        <ul id="task-list"></ul>
-      </div>
+   
+  <div class="background-blur"></div>
 
+  <div class="todo-container">
+    <header>
+      <h1>✨ My To-Do</h1>
+      <p class="subtitle">Organize your day creatively</p>
+    </header>
+
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Add a task..." />
+      <button onclick="addTask()">➕</button>
+    </div>
+
+    <ul id="task-list" class="task-list">
+      <!-- Tasks appear here -->
+    </ul>
+
+    <footer>
+      <small>🧠 Tap task to mark done • Long press to delete</small>
+    </footer>
+  </div>
 
 
     <script src="app.js"></script>
